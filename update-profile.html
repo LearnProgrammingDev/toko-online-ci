@@ -105,7 +105,7 @@
               >
               <div class="dropdown-menu" aria-labelledby="dropdown-2">
                 <a href="/profile.html" class="dropdown-item">Profile</a>
-                <a href="/order.html" class="dropdown-item">Orders</a>
+                <a href="/orders.html" class="dropdown-item">Orders</a>
                 <a href="/logout.html" class="dropdown-item">Logout</a>
               </div>
             </li>
@@ -132,24 +132,68 @@
           </div>
         </div>
         <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="https://placehold.co/150x200" alt="" />
+          <div class="card">
+            <div class="card-header">Update Profile</div>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nama"
+                    required
+                    autofocus
+                  />
+                  <small class="form-text text-danger">Nama harus di isi</small>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-body">
-                  <p>Nama: Randi</p>
-                  <p>Email: randimulyana@gmail.com</p>
-                  <a href="/profile-update.html" class="btn btn-primary"
-                    >Edit</a
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <small class="form-text text-danger"
+                    >Email harus di isi</small
                   >
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                  <small class="form-text text-danger"
+                    >password harus di isi</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Konfirmasi Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                  <small class="form-text text-danger"
+                    >password harus di isi kembali</small
+                  >
+                  <small class="form-text text-danger"
+                    >password harus sama</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="">Foto</label> <br />
+                  <input type="file" />
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+              </form>
             </div>
           </div>
         </div>
